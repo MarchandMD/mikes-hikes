@@ -1,5 +1,5 @@
 require 'sinatra'
-require '/trail'
+require './trail'
 
 get '/' do
     erb :home
