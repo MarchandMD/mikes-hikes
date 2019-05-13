@@ -129,13 +129,10 @@ q:after {
     content: none;
 }
 
-body {
-    background-color: gray;
-}
 
 header {
-    height: 20vh;
-    background-image: url(images/rangeViewTrailDramaticCool.png);
+    height: 40vh;
+    background-image: url(images/rangeViewTrail.png);
     background-repeat: no-repeat;
     background-position: bottom 50% left 35%;
     background-size: cover;
@@ -182,9 +179,12 @@ nav {
 
 a {
     text-decoration: none;
-    color: black;
+    color: #070606;
     font-weight: bold;
     text-transform: uppercase;
+    /* border: 2px solid #080808; */
+    border-radius: 2px;
+    padding: 2px 15px;
 }
 
 .hamburger {
@@ -201,13 +201,8 @@ a {
     width: 20px;
 }
 
-#below {
-position: relative;
-background: rgba(255, 255, 255, 0.75);
-}
-
 #container {
-    margin: 0 auto;
+    margin: 10px auto;
     max-width: 1200px;
     background: white;
     padding: 20px;
@@ -244,7 +239,8 @@ background: rgba(255, 255, 255, 0.75);
 
 @media (min-width: 450px) {
     header {
-        height: 30vh;
+        height: 40vh;
+        box-shadow: 0 0 11px black;
     }
     
     #titleAndTag {
@@ -259,13 +255,17 @@ background: rgba(255, 255, 255, 0.75);
         margin: 0 auto;
     }
 
-    nav {
-        display: flex;
-        max-width: 1200px;
-        margin: 0 auto;
-        justify-content: space-evenly;
-        padding: 10px 0;
-    }
+nav {
+    display: flex;
+    width: 100%;
+    /* justify-content: space-evenly; */
+    /* padding: 10px 0; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    box-shadow: 0 0 5px black;
+}
 
     .hamburger {
         display: none;
