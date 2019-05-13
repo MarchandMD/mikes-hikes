@@ -1,0 +1,15 @@
+
+<div class="title">
+    <h1>Trails hiked prior to:</h1>
+    <span><%= Date.today %></span>
+</div>
+<% if @trails.any? %>
+    <div id="trails">
+        <% @trails.each do |trail| %>
+            <a href="/trails/<%= trail.id %>"><%= trail.trail_name %></a>
+            <p><%= trail.trail_conditions %></p>
+        <% end %>
+    </div>
+<% else %>
+    <p>No trails have been added yet</p>
+<% end %>

@@ -1,0 +1,273 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1.5;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+body {
+    background-color: gray;
+}
+
+header {
+    height: 20vh;
+    background-image: url(images/rangeViewTrailDramaticCool.png);
+    background-repeat: no-repeat;
+    background-position: bottom 50% left 35%;
+    background-size: cover;
+}
+
+label {
+    display: block;
+}
+
+#titleAndTag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    background: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    text-transform: uppercase;
+}
+
+#titleAndTag > h1 {
+    font-size: 16px;
+    font-weight: 900;
+    width: 100%;
+    padding: 10px 0 10px 10px;
+}
+
+#titleAndTag > h2 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.title {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+body {
+    height: 100vh;
+}
+
+nav {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.hamburger {
+    position: absolute;
+    right: 0;
+    padding-top: 7px;
+    padding-right: 14px;
+    cursor: pointer;
+}
+
+.line {
+    border-bottom: 2px solid black;
+    padding:2px;
+    width: 20px;
+}
+
+#below {
+position: relative;
+background: rgba(255, 255, 255, 0.75);
+}
+
+#container {
+    margin: 0 auto;
+    max-width: 1200px;
+    background: white;
+    padding: 20px;
+}
+
+#trails > p {
+    width: 800px;
+    text-overflow: ellipsis;
+}
+
+.trail_name {
+    text-decoration: underline;
+}
+
+.specifics > p {
+    padding: 10px 0;
+}
+
+#trails {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+#trails > li {
+    padding: 5px 0;
+}
+
+#back_and_edit_links {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+@media (min-width: 450px) {
+    header {
+        height: 30vh;
+    }
+    
+    #titleAndTag {
+        position: relative;
+        top: 0;
+    }
+    
+    #titleAndTag>h1 {
+        font-size: 26px;
+        font-weight: 900;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    nav {
+        display: flex;
+        max-width: 1200px;
+        margin: 0 auto;
+        justify-content: space-evenly;
+        padding: 10px 0;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}
