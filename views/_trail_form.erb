@@ -1,16 +1,17 @@
-<label for="title">Trail name:</label>
-<input type="text" id="title" name="trail[trail_name]" value="<%= @trail.trail_name %>">
+<link rel="stylesheet" type="text/css" href="/stylesheets/_trail_form.css">
+<%# form html/erb %>
 
-<label for="date_hiked">Date hiked:</label>
-<input type="date" id="date_hiked" name="trail[date_hiked]" value="<%= @trail.date_hiked.strftime("%m/%d/%Y") if @trail.date_hiked %>">
-
-<label for="trail_rating">Trail Rating:</label>
-<input type="number" id="trail_rating" name="trail[trail_rating]" value="<%= @trail.trail_rating %>">
-
-<label for="view_rating">View Rating:</label>
-<input type="number" id="view_rating" name="trail[view_rating]" value="<%= @trail.view_rating %>">
-
-<label for="trail_conditions">Trail Conditions:</label>
-<textarea rows="4" col="35" id="trail_conditions" name="trail[trail_conditions]"> <%= @trail.trail_conditions %>
-</textarea>
-<input type="submit" value="Save Trail">
+<div id="trail_form_grid">
+    <label for="title">Trail name:</label>
+    <input type="text" id="title" name="trail[trail_name]" value="<%= @trail.trail_name %>">
+    <label for="date_hiked">Date hiked:</label>
+    <input type="date" id="date_hiked" name="trail[date_hiked]" value="<%= @trail.date_hiked.strftime("%m/%d/%Y") if @trail.date_hiked %>">
+    <label for="trail_rating">Trail Rating:</label>
+    <input type="number" id="trail_rating" name="trail[trail_rating]" value="<%= @trail.trail_rating %>" placeholder="0.0" step="0.1" min="0" max="10">
+    <label for="view_rating">View Rating:</label>
+    <input type="number" id="view_rating" name="trail[view_rating]" value="<%= @trail.view_rating %>" placeholder="0.0" step="0.1" min="0" max="10">
+    <label for="trail_conditions">Notes:</label>
+    <textarea rows="4" col="35" id="trail_conditions" name="trail[trail_conditions]"> <%= @trail.trail_conditions %>
+        </textarea>
+    <input type="submit" value="Save Trail">
+</div>
