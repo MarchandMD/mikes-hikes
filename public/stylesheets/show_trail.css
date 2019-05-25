@@ -1,0 +1,17 @@
+
+
+.trail_card {
+    display: grid;
+}
+
+.trail_card > * {
+    border: 1px solid black;
+    font-size: 16px;
+    justify-self: stretch;
+    text-align: center;
+    padding: 10px;
+}
+
+#trail_name {
+    font-size: 20px;
+}

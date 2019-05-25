@@ -1,0 +1,33 @@
+#trails {
+   padding: 10px;
+   display: grid;
+   grid-gap: 20px;
+}
+
+.trail-card {
+    max-width: 270px;
+    text-align: center;
+}
+
+.trail-card > h2 {
+    color: white;
+    background: rgb(65, 65, 65);
+    height: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+hr {
+    margin: 1px;
+}
+
+@media screen and (min-width: 600px) {
+    #trails {
+        grid-template-columns: 1fr 1fr;
+    }
+}

@@ -1,12 +1,13 @@
+<link href="/stylesheets/allTrails.css" rel="stylesheet" type="text/css">
 
-<div class="title">
-</div>
+
 <% if @trails.any? %>
     <div id="trails">
         <% @trails.each do |trail| %>
             <a href="/trails/<%= trail.id %>">
                 <div class="trail-card">
-                    <%= trail.trail_name %>
+                    <h2><%= trail.trail_name %></h2>
+                    <p>trail description</p>
                 </div>
             </a>
         <% end %>

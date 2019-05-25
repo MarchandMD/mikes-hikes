@@ -1,5 +1,5 @@
 <h1>Edit the Trail</h1>
-<form action="/trails/<%= @trail.id %>">
+<form action="/trails/<%= @trail.id %>" method="POST">
 <input type="hidden" name="_method" value="PUT">
 <%= erb :_trail_form %>
 </form>
