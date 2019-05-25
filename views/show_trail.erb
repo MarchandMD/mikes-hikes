@@ -1,15 +1,18 @@
-<h1 class="trail_name"><%= @trail.trail_name %></h1>
-<div class="specifics">
-    <p>Hiked on: <%= @trail.date_hiked %></p>
-    <p>Trail rating: <%= @trail.trail_rating %></p>
-    <p>view rating: <%= @trail.view_rating %></p>
-</div>
-<p>Trail conditions: <%= @trail.trail_conditions %></p>
-<div id="back_and_edit_links">
-    <a href="/trails">back to all trails</a>
-    <a href="/trails/<%= @trail.id %>/edit">edit this trail</a>
-    <form action="/trails/<%= @trail.id %>" method="POST">
-        <input type="hidden" name="_method" value="Delete">
-        <input type="submit" value="delete this trail">
-    </form>
+<div>
+    <h1 class="trail_name"><%= @trail.trail_name %></h1>
+    <div class="specifics">
+        <p>Hiked on: <%= @trail.date_hiked %></p>
+        <p>Trail rating: <%= @trail.trail_rating %></p>
+        <p>view rating: <%= @trail.view_rating %></p>
+    </div>
+    <p>Trail conditions: <%= @trail.trail_conditions %></p>
+    <div id="back_and_edit_links">
+        <a href="/trails">back to all trails</a>
+        <a href="/trails/<%= @trail.id %>/edit">edit this trail</a>
+        <form action="/trails/<%= @trail.id %>" method="POST">
+            <input type="hidden" name="_method" value="Delete">
+            <input type="submit" value="delete this trail">
+        </form>
+    </div>
+
 </div>

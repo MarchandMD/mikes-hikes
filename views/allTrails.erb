@@ -4,7 +4,12 @@
 <% if @trails.any? %>
     <div id="trails">
         <% @trails.each do |trail| %>
-            <a href="/trails/<%= trail.id %>"><%= trail.trail_name %></a>
+            <a href="/trails/<%= trail.id %>">
+                <div class="trail-card">
+                    <img src="images/rangeViewTrail.png" alt="" />
+                    <%= trail.trail_name %>
+                </div>
+            </a>
         <% end %>
     </div>
 <% else %>

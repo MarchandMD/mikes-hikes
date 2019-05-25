@@ -1,5 +1,6 @@
 require 'sinatra'
 require './trail'
+require './photos'
 
 configure :development do
     DataMapper.setup(:default, "sqlite3://#{Dir.pwd}/development.db")

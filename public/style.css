@@ -249,13 +249,13 @@ a {
 }
 
 #trails {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     margin-top: 10px;
+    border: 1px solid blue;
 }
 
-#trails > li {
-    padding: 5px 0;
+#trails > a {
+    border: 1px solid red;
 }
 
 #back_and_edit_links {
@@ -279,6 +279,14 @@ a {
 
 #home_text_wrapper_div > p {
     text-align: center;
+}
+
+#imageGridContainer {
+    width: 100%;
+}
+
+#imageGridContainer > img {
+    width: 100%;
 }
 
 @media (min-width: 450px) {
