@@ -13,8 +13,8 @@
     color: white;
     background: rgb(65, 65, 65);
     height: 100%;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+    padding: 5px;
+    
 }
 
 a {
@@ -25,6 +25,11 @@ a {
 hr {
     margin: 1px;
 }
+
+#api_trails li:nth-child(even) {
+    background-color: lightblue;
+}
+
 
 @media screen and (min-width: 600px) {
     #trails {

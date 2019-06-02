@@ -1,11 +1,9 @@
-const app = document.getElementById('root')
-const logo = document.createElement('img')
-logo.src = 'logo.png'
-const container = document.createElement('div')
-container.setAttribute('class', 'container')
-const list = document.createElement('ul')
+const trails_div = document.getElementById('api_trails')
+const ul_element = document.createElement('ul')
 let justTrailNames = [];
+let trail_names;
 
+trails_div.appendChild(ul_element);
 
 var request = new XMLHttpRequest();
 
@@ -28,23 +26,25 @@ request.onload = function () {
 
    justTrailNames = new Set(justTrailNames);
 
-   console.log(justTrailNames);
+   trail_names = Array.from(justTrailNames);
 
-   // records.forEach(record => {
+   console.log(trail_names);
 
+   trail_names.sort();
 
+   trail_names.forEach(trail => {
 
-        //const listItem = document.createElement('li')
-        //listItem.textContent = record.name
+        const listItem = document.createElement('li')
+        listItem.textContent = `${trail}`;
 
         // const p = document.createElement('p')
         // p.textContent = record.officialSiteUrl
 
-       // list.appendChild(listItem);
+       ul_element.appendChild(listItem);
 
         // card.appendChild(h1)
         // card.appendChild(p)
-    //})
+    })
 
 
 

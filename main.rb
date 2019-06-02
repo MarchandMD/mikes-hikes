@@ -13,3 +13,7 @@ end
 get '/' do
     erb :home
 end
+
+get '/admin' do
+    erb :admin
+end
